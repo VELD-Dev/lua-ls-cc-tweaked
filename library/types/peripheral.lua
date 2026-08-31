@@ -1044,3 +1044,12 @@
 ---@field name string The item name
 ---@field count integer The number of this item present
 ---@field nbt string|nil This item's Named Binary Tag
+
+---@class ccTweaked.peripheral.itemDetails
+---@field displayName string display name of the item (server-side language)
+---@field itemGroups {displayName:string, id:string}[] list of the item groups this item is in.
+---@field mapColor number RGB color code of the block on the map
+---@field mapColour number RGB colour code of the block on the map but for british
+---@field maxCount number maximum stack size of the item
+---@field name string minecraft item id
+---@field tags table<string, boolean> tags of the item
