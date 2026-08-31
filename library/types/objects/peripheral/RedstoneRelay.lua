@@ -18,7 +18,7 @@ function RedstoneRelay.setOutput(side, on) end
 
 ---Get the current redstone output of a specific side.
 ---@param side ccTweaked.peripheral.computerSide
----@returns boolean Whether the redstone output is on or off.
+---@return boolean Whether the redstone output is on or off.
 ---@see RedstoneRelay.setOutput
 ------
 ---[The Official Documentation](https://tweaked.cc/peripheral/redstone_relay.html#v:getOutput)
@@ -26,7 +26,7 @@ function RedstoneRelay.getOutput(side) end
 
 ---Get the current redstone input of a specific side.
 ---@param side ccTweaked.peripheral.computerSide The side to get.
----@returns boolean Whether the redstone input is on or off.
+---@return boolean Whether the redstone input is on or off.
 ------
 ---[The Official Documentation](https://tweaked.cc/peripheral/redstone_relay.html#v:getInput)
 function RedstoneRelay.getInput(side) end
@@ -49,7 +49,7 @@ function RedstoneRelay.setAnalogueOutput(side, value) end
 
 ---Get the redstone output signal strength for a specific side.
 ---@param side ccTweaked.peripheral.computerSide The side to get.
----@returns number The output signal strength, between 0 and 15.
+---@return number The output signal strength, between 0 and 15.
 ---@see RedstoneRelay.setAnalogOutput
 ------
 ---[The Official Documentation](https://tweaked.cc/peripheral/redstone_relay.html#v:getAnalogOutput)
@@ -57,7 +57,7 @@ function RedstoneRelay.getAnalogOutput(side) end
 
 ---Get the redstone output signal strength for a specific side.
 ---@param side ccTweaked.peripheral.computerSide The side to get.
----@returns number The output signal strength, between 0 and 15.
+---@return number The output signal strength, between 0 and 15.
 ---@see RedstoneRelay.setAnalogueOutput
 ------
 ---[The Official Documentation](https://tweaked.cc/peripheral/redstone_relay.html#v:getAnalogueOutput)
@@ -74,14 +74,14 @@ function RedstoneRelay.setBundledOutput(side, output) end
 
 ---Get the bundled cable output for a specific side.
 ---@param side ccTweaked.peripheral.computerSide The side to get.
----@returns number The bundle cable's output
+---@return number The bundle cable's output
 ------
 ---[The Official Documentation](https://tweaked.cc/peripheral/redstone_relay.html#v:getBundledOutput)
 function RedstoneRelay.getBundledOutput(side) end
 
 ---Get the bundled cable input for a specific side.
 ---@param side ccTweaked.peripheral.computerSide
----@returns number The bundle cable's input.
+---@return number The bundle cable's input.
 ---@see RedstoneRelay.testBundledInput To determine if a specific colour is set.
 ------
 ---[The Official Documentation](https://tweaked.cc/peripheral/redstone_relay.html#v:getBundledInput)
@@ -90,7 +90,7 @@ function RedstoneRelay.getBundledInput(side) end
 ---Determine if a specific combination of colours are on for the given side.
 ---@param side ccTweaked.peripheral.computerSide The side to test.
 ---@param mask number The mask to test.
----@returns boolean If the colours are on.
+---@return boolean If the colours are on.
 ---@see RedstoneRelay.getBundledInput
 ------
 ---[The Official Documentation](https://tweaked.cc/peripheral/redstone_relay.html#v:testBundledInput)
